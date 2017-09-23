@@ -52,12 +52,12 @@
                <div class="col-xs-12" style="height:40px;"></div>
                <div style="width:450px; margin:0 auto;">
                   <div class="col-md-11.2 form-group" ng-class="{'has-error': (submitted && homeForm.search.$invalid)}">
-                     <input type="text" class="form-control" name="search" id="search" ng-model="search" placeholder="Username" required>
+                     <input type="text" class="form-control" name="search" id="username" ng-model="username" placeholder="Username" required>
                      <div ng-show="submitted && homeForm.search.$invalid">	
                      </div>
                   </div>
                   <div class="col-md-11.2 form-group" ng-class="{'has-error': (submitted && homeForm.search.$invalid)}">
-                     <input type="text" class="form-control" name="search" id="search" ng-model="search" placeholder="PasswordS" required>
+                     <input type="password" class="form-control" name="search" id="password" ng-model="password" placeholder="Password" required>
                      <div ng-show="submitted && homeForm.search.$invalid">	
                      </div>
                   </div>
@@ -69,14 +69,14 @@
                <div style="width:450px; margin:0 auto;">
                <div class="col-md-6">
                   <center>
-                     <button type="submit" class="btn btn-primary" ng-click="button='login'">Login</button>
+                     <button type="submit" class="btn btn-primary" ng-click="login(loginForm.$valid)">Login</button>
                   </center>
                   <div class="emptyline">	
                   </div>
                </div>
                <div class="col-md-6">
                   <center>
-                     <button type="submit" class="btn btn-primary" ng-click="button='signUp'">Sign Up</button>
+                     <button type="submit" class="btn btn-primary" ng-click="signUp(loginForm.$valid)">Sign Up</button>
                   </center>
                   <div class="emptyline">	
                   </div>
@@ -86,14 +86,14 @@
             <div style="width:450px; margin:0 auto;">
                <div class="col-md-6">
                   <center>
-                     <button type="submit" class="btn btn-primary" ng-click="button='google'">Connect with Google</button>
+                     <button type="submit" class="btn btn-primary" ng-click="google()">Connect with Google</button>
                   </center>
                   <div class="emptyline">	
                   </div>
                </div>
                <div class="col-md-6">
                   <center>
-                     <button type="submit" class="btn btn-primary" ng-click="button='facebook'">Connect with Facebook</button>
+                     <button type="submit" class="btn btn-primary" ng-click="facebook()">Connect with Facebook</button>
                   </center>
                </div>
             </div>

@@ -45,7 +45,7 @@ var infoWindow = new google.maps.InfoWindow();
 var marker = new google.maps.Marker({
   map: map
 });
-
+/*
 google.maps.event.addListener(autocomplete, 'place_changed', function() {
   infoWindow.close();
   var place = autocomplete.getPlace();
@@ -65,6 +65,6 @@ google.maps.event.addListener(autocomplete, 'place_changed', function() {
    // infoWindow.open(map, marker);
 
   });
-});
+});*/
 
 });
