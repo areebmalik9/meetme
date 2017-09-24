@@ -12,7 +12,7 @@
 
 	</style>
 
-	<form name="homeForm" ng-submit="directPage(homeForm.$valid)" novalidate>  
+	<form name="searchForm" ng-submit="directPage(searchForm.$valid)" novalidate>  
 		<div class="modal-dialog">
 			<div class="modal-content mblack">
 
@@ -40,16 +40,22 @@
 
 					<div class="col-md-10">
 
-						<div class="col-md-7 form-group"> 
+						<div class="col-md-4 form-group"> 
 <!-- 							ng-class="{'has-error': (submitted && homeForm.search.$invalid)}" -->
-							<input type="text" class="form-control" name="search" id="search" ng-model="startLocation" placeholder="Start Location" required>
+							<input type="text" class="form-control" name="startLocation" id="startLocation" ng-model="startLocationSearch" placeholder="Start Location" required>
 <!-- 							<div ng-show="submitted && homeForm.search.$invalid">	<span class="help-block">Must enter a search parameter.</span>
 							</div> -->
 						</div>
 
 						<div class="col-md-4 form-group" >
 <!-- 							ng-class="{'has-error': (submitted && homeForm.location.$invalid)}" -->
-							<input type="text" class="form-control" name="location" id="location" ng-model="endLocation" placeholder="End Location" required>
+							<input type="text" class="form-control" name="endLocation" id="endLocation" ng-model="endLocationSearch" placeholder="End Location" required>
+<!-- 							<div ng-show="submitted && homeForm.location.$invalid">	<span class="help-block">Must enter a location parameter	.</span>
+							</div> -->
+						</div>
+						<div class="col-md-4 form-group" >
+<!-- 							ng-class="{'has-error': (submitted && homeForm.location.$invalid)}" -->
+							<input type="text" class="form-control" name="user" id="user" ng-model="user" placeholder="Other user" required>
 <!-- 							<div ng-show="submitted && homeForm.location.$invalid">	<span class="help-block">Must enter a location parameter	.</span>
 							</div> -->
 						</div>

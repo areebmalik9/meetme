@@ -14,6 +14,10 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 		templateUrl: 'homepage/homepage.html',
 		controller: 'HomePageCtrl'
 	})
+	.when('/search', {
+		templateUrl: 'searchpage/search.html',
+		controller: 'SearchCtrl'
+	})
 	.when('/result', {
 		templateUrl: 'result/result.html',
 		controller: 'ResultCtrl'

@@ -16,9 +16,9 @@ angular.module('meetme')
 			// 	latitude: 43.260846,
 			// 	longitude: -79.919215
 			// }
-			sessionStorage.setItem('search', $scope.search);
-			sessionStorage.setItem('locationSearched', $scope.locationSearched);
-			sessionStorage.setItem('location', JSON.stringify($scope.location));
+			sessionStorage.setItem('startLocation', $scope.startLocation);
+			sessionStorage.setItem('endLocation', $scope.endLocation);
+			// sessionStorage.setItem('location', JSON.stringify($scope.location));
 			$location.path(path);
 		}
 	};
